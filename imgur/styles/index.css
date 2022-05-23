@@ -24,6 +24,7 @@ button {
 body {
    background-color: #2e3035;
 }
+
 .navContainer {
    background-image: url(https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png);
    height: 270px;
@@ -32,11 +33,13 @@ body {
    flex-direction: column;
    justify-content: flex-start;
 }
+
 .heading {
    color: #aed8ea;
    width: 90%;
    margin: auto;
 }
+
 .navbar {
    display: flex;
    border-bottom: 1px gray;
@@ -48,13 +51,16 @@ body {
 .navbar * {
    margin-top: 10px;
 }
+
 .left {
    display: flex;
    justify-content: space-between;
 }
+
 .left * {
    height: 40px;
 }
+
 .midNav {
    display: flex;
    justify-content: space-around;
@@ -64,6 +70,7 @@ body {
 .midNav i {
    position: absolute;
 }
+
 .icon {
    padding: 10px;
    color: white;
@@ -71,6 +78,7 @@ body {
    text-align: center;
    left: 59%;
 }
+
 .search {
    height: 35px;
    width: 460px;
@@ -82,9 +90,11 @@ body {
    border-radius: 2px;
    font-size: 17px;
 }
+
 .search:focus {
    outline: none;
 }
+
 .search::placeholder {
    color: white;
    opacity: 0.8;
@@ -98,10 +108,12 @@ body {
 .greenButton {
    background-color: #1bb76e;
 }
+
 .logo {
    width: 50%;
    margin-right: 20px;
 }
+
 .purpleBtn {
    background-color: #6432f9;
 }
@@ -117,6 +129,7 @@ body {
    width: 90%;
    margin: auto;
 }
+
 #card {
    background-color: #474a51;
    height: fit-content;
@@ -153,20 +166,24 @@ body {
    margin: auto;
    margin-top: 2%;
 }
+
 .tag {
    height: 100px;
    width: 140px;
    border-radius: 5px;
 }
+
 .tag img {
    width: 100%;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
 }
+
 .tag:hover {
    transform: scale(1.05);
    transition: 0.4s;
 }
+
 .descTag {
    margin-top: 4%;
 }
@@ -181,16 +198,16 @@ body {
    color: rgb(169, 167, 179);
    position: sticky;
    top: 0;
-   background: url(https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png)
-      no-repeat #2e3035;
+   background: url(https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png) no-repeat #2e3035;
    background-size: 100% 400px;
    z-index: 999;
 }
-.smallNav > div > img {
+
+.smallNav>div>img {
    width: 20px;
 }
 
-.smallNav > div > p {
+.smallNav>div>p {
    font-size: 1.1rem;
    letter-spacing: 1px;
    font-weight: bold;
@@ -202,7 +219,7 @@ body {
    align-items: center;
 }
 
-.smallNavIcons > div > p {
+.smallNavIcons>div>p {
    font-size: 1.1rem;
    font-weight: bold;
    letter-spacing: 1px;
