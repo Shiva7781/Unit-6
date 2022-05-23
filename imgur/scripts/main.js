@@ -1,50 +1,50 @@
 let makeAPICall = async (page) => {
-  try {
-    let data = await fetch(`https://api.unsplash.com/photos/?client_id=bESk1zhXjAJAd4AWL9VjlNKhx6Ijt23sJd1UlE5GdJc&per_page=30&page=${page}`);
+   try {
+      let data = await fetch(`https://api.unsplash.com/photos/?client_id=bESk1zhXjAJAd4AWL9VjlNKhx6Ijt23sJd1UlE5GdJc&per_page=30&page=${page}`);
 
-    let res = await data.json();
-    console.log("res:", res);
-    return res;
-  } catch (error) {
-    console.log("error:", error);
-  }
+      let res = await data.json();
+      console.log("res:", res);
+      return res;
+   } catch (error) {
+      console.log("error:", error);
+   }
 };
 
 let appendImages = (res, main) => {
-  main.innerHTML = "";
-  res.forEach((e) => {
-    //   console.log("e:", e)
-    let image = document.createElement("img");
-    image.src = e.urls.thumb;
+   main.innerHTML = "";
+   res.forEach((e) => {
+      //   console.log("e:", e)
+      let image = document.createElement("img");
+      image.src = e.urls.thumb;
 
-    let name = document.createElement("p");
-    name.innerText = e.user.name;
+      let name = document.createElement("p");
+      name.innerText = e.user.name;
 
-    let likes = document.createElement("p");
-    likes.innerText = "👍🏻 " + getRandomArbitrary(0, 1000);
+      let likes = document.createElement("p");
+      likes.innerText = "👍🏻 " + getRandomArbitrary(0, 1000);
 
-    const comments = document.createElement("p");
-    comments.textContent = "💬 " + getRandomArbitrary(0, 100);
+      const comments = document.createElement("p");
+      comments.textContent = "💬 " + getRandomArbitrary(0, 100);
 
-    const views = document.createElement("p");
-    views.innerText = "👁️ " + getRandomArbitrary(101, 150) + "k";
+      const views = document.createElement("p");
+      views.innerText = "👁️ " + getRandomArbitrary(101, 150) + "k";
 
-    let descDiv = document.createElement("div");
-    descDiv.id = "descDiv";
+      let descDiv = document.createElement("div");
+      descDiv.id = "descDiv";
 
-    descDiv.append(likes, comments, views);
+      descDiv.append(likes, comments, views);
 
-    let div = document.createElement("div");
-    div.id = "card";
+      let div = document.createElement("div");
+      div.id = "card";
 
-    div.append(image, name, descDiv);
+      div.append(image, name, descDiv);
 
-    main.append(div);
-  });
+      main.append(div);
+   });
 };
 
 function getRandomArbitrary(min, max) {
-  return Math.round(Math.random() * (max - min) + min);
+   return Math.round(Math.random() * (max - min) + min);
 }
 
 export { makeAPICall, appendImages };
