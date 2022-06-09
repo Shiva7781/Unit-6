@@ -1,0 +1,30 @@
+{
+  "cities": [
+    {
+      "country": "Sri Lanka",
+      "city": "Nashik",
+      "people": "5",
+      "id": 1
+    },
+    {
+      "country": "India",
+      "city": "Nashik",
+      "people": "1",
+      "id": 2
+    }
+  ],
+  "countries": [
+    {
+      "country": "America",
+      "id": 1
+    },
+    {
+      "country": "India",
+      "id": 2
+    },
+    {
+      "country": "India",
+      "id": 3
+    }
+  ]
+}
