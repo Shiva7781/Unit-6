@@ -1,0 +1,8 @@
+POST http://localhost:5000/api/url/shorten
+Content-Type: application/json
+
+{
+  "longUrl": "https://cloud.mongodb.com/v2/6225b807b5e87662c61b3975#metrics/replicaSet/628b45b860009f215c1c29cc/explorer/urlShortner"
+}
+
+
