@@ -2,21 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Google Map</title>
 </head>
 
 <body>
-    <div class="container">
+    <div id="container">
         <h1>My Google Map</h1>
-        <div id="map"></div>
+        <div class="map"></div>
+        <div class="list">
+            <div>
+                <div>
+                    <h3>Bengaluru Fort</h3>
+                    <p>4.0 ⭐⭐⭐⭐</p>
+                    <p>Fortress</p>
+                </div>
+                <button onclick="mapDisplay1()">
+                    <img src="navigation.png" alt="Bengaluru Fort">
+                    <p>Directions</p>
+                </button>
+
+            </div>
+            <hr>
+
+            <div>
+                <div>
+                    <h3>Fort E street</h3>
+                    <p>No reviews</p>
+                    <p>Housing Society</p>
+                </div>
+                <button onclick="mapDisplay2()">
+                    <img src="navigation.png" alt="Fort E street">
+                    <p>Directions</p>
+                </button>
+            </div>
+            <hr>
+
+            <div>
+                <div>
+                    <h3>Fort High School</h3>
+                    <p>4.0 ⭐⭐⭐⭐</p>
+                    <p>High School</p>
+                </div>
+                <button onclick="mapDisplay3()">
+                    <img src="navigation.png" alt="Fort High School">
+                    <p>Directions</p>
+                </button>
+            </div>
+            <hr>
+
+            <div>
+                <div>
+                    <h3>West Fort Hotel</h3>
+                    <p>4.0 ⭐⭐⭐⭐</p>
+                    <p>2-star Hotel</p>
+                </div>
+                <button onclick="mapDisplay4()">
+                    <img src="navigation.png" alt="West Fort Hotel">
+                    <p>Directions</p>
+                </button>
+            </div>
+
+        </div>
     </div>
 </body>
 
 </html>
-<script src="index.js">
-
-</script>
+<script src="index.js"></script>
